@@ -3,6 +3,11 @@
 This is the Tour of Heros, from the [Angular 2 docs tutorial](https://angular.io/docs/ts/latest/tutorial/).
 I am also using the angular 2 CLI as my build tool. And editing the instructions from the tutorial to fit my needs.
 
+I think this will make a nice module for staffing. I also like my product management application module 
+
+
+
+----------
 
 ## Boilerplate ##
 
