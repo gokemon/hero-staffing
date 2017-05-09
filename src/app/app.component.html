@@ -1,11 +1,20 @@
-<h1>
-    {{title}}
-</h1>
-<h2>{{hero.name}} details!</h2>
-<div><label>id: </label>{{hero.id}}</div>
-
-<div>
-    <label>name: </label>
-    <!--Allows for two-way data binding-->
-    <input [(ngModel)]="hero.name" placeholder="name">
+<h1>{{title}}</h1>
+<h2>My Team Here To Help You</h2>
+<ul class="heroes">
+    <!--*ngFor loop-->
+    <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </li>
+    <!--*ngFor loop-->
+</ul>
+<!--*ngIf loop-->
+<div *ngIf="selectedHero">
+    <h2>{{selectedHero.name}} details!</h2>
+    <div><label>id: </label>{{selectedHero.id}}</div>
+    <div>
+        <label>name: </label>
+        <!--Allows for two-way data binding-->
+        <input [(ngModel)]="selectedHero.name" placeholder="name" />
+    </div>
 </div>
+<!--*ngIf loop-->
