@@ -1,0 +1,5 @@
+
+I am building this Hero Staffing firm based off the Tour of Heros Angular.IO tutorial
+https://angular.io/docs/ts/latest/tutorial/toh-pt1.html
+
+I am building it using the ng-cli project, and then editing the tutorial instructions for the more full-fledged instructions.

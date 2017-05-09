@@ -1,5 +1,11 @@
 # HeroStaffing
 
+This is the Tour of Heros, from the [Angular 2 docs tutorial](https://angular.io/docs/ts/latest/tutorial/).
+I am also using the angular 2 CLI as my build tool. And editing the instructions from the tutorial to fit my needs.
+
+
+## Boilerplate ##
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
 
 ## Development server
