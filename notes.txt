@@ -7,3 +7,8 @@ I am building it using the ng-cli project, and then editing the tutorial instruc
 
 use
 git push origin master
+
+npm run deploy
+
+
+Display a list of staff, and allow users to select a person and display the person's details
