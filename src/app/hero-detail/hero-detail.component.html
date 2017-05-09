@@ -1,0 +1,11 @@
+<!--*ngIf loop-->
+<div *ngIf="hero">
+    <h2>{{hero.name}}, waging war on waste</h2>
+    <div><label>Number: </label>{{hero.id}}</div>
+    <div>
+        <label>General: </label>
+        <!--Allows for two-way data binding-->
+        <input [(ngModel)]="hero.name" placeholder="name" />
+    </div>
+</div>
+<!--*ngIf loop-->

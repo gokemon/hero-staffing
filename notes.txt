@@ -12,3 +12,14 @@ npm run deploy
 
 
 Display a list of staff, and allow users to select a person and display the person's details
+Now lets make some sub-components, each focused on a specific task or workflow. 
+Eventually, the AppComponent could become a simple shell that hosts those sub-components.
+
+ng g component hero-detail 
+
+We declared the required application directives in an Angular module. 
+You listed the directives in the NgModule decorator's declarations array.
+You learned to bind a parent component to a child component.
+Like when you change a name in hero-detail.component, 
+	it shows up in the master list in the app.component.
+So our app is more reusable with shared components, but its (mock) data is still hard coded within the AppComponent. That's not sustainable. Data access should be refactored to a separate service and shared among the components that need data.	

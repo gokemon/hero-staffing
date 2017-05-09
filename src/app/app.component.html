@@ -7,14 +7,4 @@
     </li>
     <!--*ngFor loop-->
 </ul>
-<!--*ngIf loop-->
-<div *ngIf="selectedHero">
-    <h2>{{selectedHero.name}} details!</h2>
-    <div><label>id: </label>{{selectedHero.id}}</div>
-    <div>
-        <label>name: </label>
-        <!--Allows for two-way data binding-->
-        <input [(ngModel)]="selectedHero.name" placeholder="name" />
-    </div>
-</div>
-<!--*ngIf loop-->
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>

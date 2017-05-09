@@ -3,8 +3,26 @@
 This is the Tour of Heros, from the [Angular 2 docs tutorial](https://angular.io/docs/ts/latest/tutorial/).
 I am also using the angular 2 CLI as my build tool. And editing the instructions from the tutorial to fit my needs.
 
-I think this will make a nice module for staffing. I also like my product management application module 
+I think this will make a nice module for staffing. I also like my product management application module. This is part of my step-by-step learning process towards building an enterprise-type business application. I want to master routing, forms, and putting several different "baby" apps together.
 
+
+
+- We declared the required application directives in an Angular module.
+- You listed the directives in the NgModule decorator's declarations array.
+- You learned to bind a parent component to a child component.
+- Like when you change a name in hero-detail.component, 
+	it shows up in the master list in the app.component.
+- So our app is more reusable with shared components, but its (mock) data is still hard coded within the AppComponent. That's not sustainable. Data access should be re-factored to a separate service and shared among the components that need data.
+## Next steps,
+
+- Need to learn to use Step-Tags in my Git workflow process. I used Branches pretty well in my [Angular-CLI-ToDos project](https://github.com/gokemon/Angular-CLI-ToDos);
+	- Master branch
+	- FirstBasicAppComponent branch
+	- ComponentRefactoring branch
+	- GH-pages branch
+- Our next step in the Staffing Firm project is ***Creating Services***
+- Then Adding Router and learning to navigate among the views
+- Lastly, you’ll replace the mock data with data retrieved from a server using http.
 
 
 ----------

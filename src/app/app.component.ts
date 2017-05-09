@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
+// imports Angular "core" above
+import { Hero } from './hero';
 
-
-/* Why is this up here? */
-export class Hero {
-  id: number;
-  name: string;
-}/* I would think this goes somewhere else */
 
 /* I guess this constructor also goes somewhere else later
 as it is not part of the app.component */
@@ -34,10 +30,6 @@ const HEROES: Hero[] = [
 // exportable class
 export class AppComponent {
   title = 'Hero Staffing';
-  // hero: Hero = {
-  //   id: 1,
-  //   name: 'Windstorm'
-  // }; // moved out
   heroes = HEROES;
   selectedHero: Hero;
 
