@@ -1,37 +1,31 @@
-import { Component } from '@angular/core';
-// imports Angular "core" above
+import { Component, OnInit  } from '@angular/core';
+// imports Angular "core" above and my stuff below
 import { Hero } from './hero';
-
-
-/* I guess this constructor also goes somewhere else later
-as it is not part of the app.component */
-const HEROES: Hero[] = [
-  { id: 11, name: 'George Marshall' },
-  { id: 12, name: 'Dwight D. Eisenhower' },
-  { id: 13, name: 'Douglas MacArthur' },
-  { id: 14, name: 'Omar Bradley' },
-  { id: 15, name: 'Mark W. Clark' },
-  { id: 16, name: 'Harold Alexander' },
-  { id: 17, name: 'Courtney Hodges' },
-  { id: 27, name: 'Matthew B. Ridgeway' },
-  { id: 82, name: 'James M. Gavin' },
-  { id: 20, name: 'William Orlando Darby' },
-  { id: 21, name: 'Robert T. Frederick' },
-  { id: 101, name: 'Anthony McAuliffe' }
-];
+import { HeroService } from './hero.service';
 
 
 // TypeDecorator
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [HeroService]
 })
 // exportable class
-export class AppComponent {
+export class AppComponent  implements OnInit {
   title = 'Hero Staffing';
-  heroes = HEROES;
+  heroes: Hero[];
   selectedHero: Hero;
+
+  constructor(private heroService: HeroService) { }
+
+  getHeroes(): void {
+    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+  }
+
+  ngOnInit(): void {
+    this.getHeroes();
+  }
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;

@@ -13,6 +13,8 @@ I think this will make a nice module for staffing. I also like my product manage
 - Like when you change a name in hero-detail.component, 
 	it shows up in the master list in the app.component.
 - So our app is more reusable with shared components, but its (mock) data is still hard coded within the AppComponent. That's not sustainable. Data access should be re-factored to a separate service and shared among the components that need data.
+
+
 ## Next steps,
 
 - Need to learn to use Step-Tags in my Git workflow process. I used Branches pretty well in my [Angular-CLI-ToDos project](https://github.com/gokemon/Angular-CLI-ToDos);
@@ -20,9 +22,40 @@ I think this will make a nice module for staffing. I also like my product manage
 	- FirstBasicAppComponent branch
 	- ComponentRefactoring branch
 	- GH-pages branch
-- Our next step in the Staffing Firm project is ***Creating Services***
+	- *[Tagging Steps](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html)*
+- Our next step (Step Five, 1.1.5) in the Staffing Firm project is ***Creating Services***
 - Then Adding Router and learning to navigate among the views
 - Lastly, you’ll replace the mock data with data retrieved from a server using http.
+
+### Step Five ~ Creating Services
+
+As the app evolves, we'll add more components that need access to hero data.
+
+Instead of copying and pasting the same code over and over, let's create a single reusable data service and inject it into the components that need it. Using a separate service keeps components lean and focused on supporting the view, and makes it easy to unit-test components with a mock service.
+
+Because data services are invariably asynchronous, we'll finish the page with a *Promise-based* version of the data service.
+
+### Step Six ~ Routing
+(Step Six, 1.1.6)
+There are new requirements for the Heroes Staffing Firm app:
+
+1. Add a Dashboard view.
+1. Add the ability to navigate between the Heroes and Dashboard views.
+1. When users click a hero name in either view, navigate to a detail view of the selected hero.
+1. When users click a deep link in an email, open the detail view for a particular hero.
+
+When you’re done, users will be able to navigate the app
+
+### Step Seven ~ Use Angular's HTTP service
+(Step Seven, 1.1.7)
+
+We make the following improvements.
+ 
+1. Get the hero data from a server.
+1. Let users add, edit, and delete hero names.
+1. Save the changes to the server.
+
+You'll teach the app to make corresponding HTTP calls to a remote server's web API.
 
 
 ----------

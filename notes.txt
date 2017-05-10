@@ -23,3 +23,11 @@ You learned to bind a parent component to a child component.
 Like when you change a name in hero-detail.component, 
 	it shows up in the master list in the app.component.
 So our app is more reusable with shared components, but its (mock) data is still hard coded within the AppComponent. That's not sustainable. Data access should be refactored to a separate service and shared among the components that need data.	
+
+ng generate service Hero
+
+I kind of want to Include Angular Material in this app, but also sort of want to stay with Bootstrap & Font Awesome
+https://github.com/angular/angular-cli/wiki/stories-include-angular-material
+
+https://github.com/angular/angular-cli/wiki/stories-include-bootstrap
+https://github.com/angular/angular-cli/wiki/stories-include-font-awesome

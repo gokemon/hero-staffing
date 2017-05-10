@@ -18,7 +18,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     FormsModule, // import the FormsModule before binding with [(ngModel)]
     HttpModule
   ], // importing Modules from Angular "core"
-  providers: [],
+  // providers: [],
   bootstrap: [AppComponent]
 })
 
